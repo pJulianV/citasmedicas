@@ -1,0 +1,17 @@
+
+.body {
+    background-color: #cfced6;
+}
+.contenedor-img{
+    margin: auto;
+    width: 60%;
+    height: 60%;
+}
+.site-footer  {
+   text-align: center;
+}
+.content{
+    margin: auto;
+    width: 80%;
+    height: 80%; 
+}

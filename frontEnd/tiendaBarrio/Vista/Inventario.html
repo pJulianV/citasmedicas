@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="tienda virtual de barrio">
+    <meta name="keywords" content="tienda virtual,tiendabarrio,ventaproductos">
+    <meta name="author" content="John Doe">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda - Inventario</title>
+    <link rel="stylesheet" href="/Assets/css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+        <link rel="stylesheet" href="/Assets/css/jquery.dataTables.min.css">
+    </head>
+
+<body class="body">
+    <div class="container-fluid">
+            <nav class="navbar navbar-expand-lg navbar-dark  bg-primary">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="/">Tienda Barrio</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="/">Menu Principal</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Vista/Productos.html">Productos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Vista/Proveedores.html">Proveedores</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Vista/Inventario.html">Inventario</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <br/>
+            <header class="pb-3 mb-4 border-bottom">
+              <a href="/" class="d-flex align-items-center text-dark text-decoration-none">
+                <a href="/Vista/nuevoInventario.html" class="btn btn-info">Nuevo Inventario</a>               
+            </a>
+              </header>
+              <div class="alert alert-success" role="alert" style="display:none;"id="alertSuccessmenu">
+              </div>
+              <div class="alert alert-danger" role="alert" style="display:none" id="alertErrormenu">
+            </div>
+          </header>
+          <section class="content">
+            <table class="table display" id="tablaInventario"  style="width:100%">
+                <thead>
+                  <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Producto</th>
+                    <th scope="col">Proveedor</th>
+                    <th scope="col">stock</th>
+                    <th scope="col">Sucursal</th>
+                    <th scope="col">Acciones</th>
+                  </tr>
+                </thead>
+                <tbody class="table-group-divider">
+                   
+                </tbody>
+              </table>
+        </section>
+</div>
+</body>
+<script src="https://code.jquery.com/jquery-3.6.1.js" 
+integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+    crossorigin="anonymous"></script>
+    <script src="/Assets/js/jquery.dataTables.min.js"></script>
+    <script src="/Assets/js/Inventario.js"></script>
+</html>
